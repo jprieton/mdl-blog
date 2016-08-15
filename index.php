@@ -17,10 +17,12 @@
 -->
 <html <?php language_attributes(); ?>>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- -->
+    <?php wp_head() ?>
+    <!-- -->
+
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Material Design Lite</title>
 
     <!-- Add to homescreen for Chrome on Android -->
@@ -159,7 +161,7 @@
       </main>
       <div class="mdl-layout__obfuscator"></div>
     </div>
-    <script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+    <?php wp_footer() ?>
   </body>
   <script>
     Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function (el) {
