@@ -454,6 +454,7 @@ body .demo-blog {
   background-size: 50%;
   border-radius: 22px;
   background-color: #F5F5F5;
+  overflow: hidden;
 }
 
 /* Fixes for IE 10 */
