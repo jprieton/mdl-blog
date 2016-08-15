@@ -1,4 +1,5 @@
-<div <?php post_class( 'mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col' ) ?>>
+
+<article <?php post_class( 'mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col' ) ?>>
   <div class="mdl-card__media mdl-color-text--grey-50">
     <h3><?php the_title() ?></h3>
   </div>
@@ -80,4 +81,4 @@
       </div>
     </div>
   </div>
-</div>
+</article>

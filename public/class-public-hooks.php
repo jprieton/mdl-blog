@@ -14,8 +14,9 @@ class Public_Hooks {
   }
 
   public function wp_enqueue_scripts() {
-    wp_register_script( 'mdl', '//code.getmdl.io/1.2.0/material.min.js', array(), '1.2.0', true );
-    wp_enqueue_script( 'mdl' );
+    wp_enqueue_style( 'google-font-roboto', '//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i' );
+    wp_enqueue_script( 'mdl', get_template_directory_uri() . '/public/js/material.min.js', array(), '1.2.0', true );
+    //wp_enqueue_script( 'mdl', '//code.getmdl.io/1.2.0/material.min.js', array(), '1.2.0', true );
   }
 
   public function after_setup_theme() {
