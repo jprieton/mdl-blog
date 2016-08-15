@@ -10,17 +10,26 @@ body::before {
   top: 0;
   position: fixed;
 }
-@media (max-width: 512px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 512px) and (min-resolution: 1.5dppx), (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1.5), (max-width: 1024px) and (max-resolution: 1.5dppx) {
+@media (max-width: 512px)  and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 512px)  and (min-resolution: 1.5dppx),
+(max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1.5),
+(max-width: 1024px) and (max-resolution: 1.5dppx) {
   body::before {
     background-image: url('images/bg_1024.jpg');
   }
 }
-@media (min-width: 513px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 513px) and (max-width: 1024px) and (min-resolution: 1.5dppx), (min-width: 1025px) and (max-width: 2048px) and (-webkit-max-device-pixel-ratio: 1.5), (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx) {
+@media (min-width: 513px)  and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5),
+(min-width: 513px)  and (max-width: 1024px) and (min-resolution: 1.5dppx),
+(min-width: 1025px) and (max-width: 2048px) and (-webkit-max-device-pixel-ratio: 1.5),
+(min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx)  {
   body::before {
     background-image: url('images/bg_2048.jpg');
   }
 }
-@media (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1025px) and (min-resolution: 1.5dppx), (min-width: 2049px) and (-webkit-max-device-pixel-ratio: 1.5), (min-width: 2049px) and (max-resolution: 1.5dppx) {
+@media (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1.5),
+(min-width: 1025px) and (min-resolution: 1.5dppx),
+(min-width: 2049px) and (-webkit-max-device-pixel-ratio: 1.5),
+(min-width: 2049px) and (max-resolution: 1.5dppx) {
   body::before {
     background-image: url('images/bg_2880.jpg');
   }
@@ -28,6 +37,7 @@ body::before {
 body .demo-blog {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
+
 .demo-blog .demo-blog__posts {
   max-width: 900px;
   padding: 0;
@@ -40,6 +50,7 @@ body .demo-blog {
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
+
 .demo-blog.mdl-layout .mdl-layout__content {
   padding-top: 230px;
   position: relative;
@@ -107,8 +118,9 @@ body .demo-blog {
   min-height: 76px;
 }
 .demo-blog:not(.demo-blog--blogpost) .mdl-card__supporting-text ~ .mdl-card__supporting-text {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0,0,0,0.1);
 }
+
 .demo-blog .mdl-card__actions:first-child {
   margin-left: 0;
 }
@@ -129,7 +141,7 @@ body .demo-blog {
   justify-content: flex-start;
   height: auto;
 }
-.demo-blog .meta > .meta__favorites {
+.demo-blog .meta > .meta__favorites{
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -237,7 +249,7 @@ body .demo-blog {
   text-decoration: none;
 }
 .demo-blog .demo-blog__posts > .demo-nav .mdl-button {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0,0,0,0.54);
   background-color: white;
 }
 .demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button:first-child .mdl-button {
@@ -257,8 +269,7 @@ body .demo-blog {
 .demo-blog .mdl-card h3 a {
   text-decoration: none;
 }
-.demo-blog .mdl-card h3.quote:before,
-.demo-blog .mdl-card h3.quote:after {
+.demo-blog .mdl-card h3.quote:before, .demo-blog .mdl-card h3.quote:after {
   display: block;
   font-size: 3em;
   margin-top: 0.5em;
@@ -307,6 +318,7 @@ body .demo-blog {
 .demo-blog--blogpost .meta + .mdl-card__supporting-text > pre {
   overflow: auto;
 }
+
 .demo-blog--blogpost .comments {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -337,7 +349,7 @@ body .demo-blog {
   -ms-flex-positive: 1;
   flex-grow: 1;
   margin-right: 16px;
-  color: #616161;
+  color: rgb(97, 97, 97);
 }
 /* Workaround for Firefox.
  * User agent stylesheet kept overwriting the font in FF only.
@@ -421,6 +433,7 @@ body .demo-blog {
   padding-top: 32px;
   padding-left: 48px;
 }
+
 .demo-blog--blogpost .demo-back {
   position: absolute;
   top: 16px;
@@ -451,12 +464,14 @@ body .demo-blog {
   background-color: #F5F5F5;
   overflow: hidden;
 }
+
 /* Fixes for IE 10 */
 .mdl-grid {
   display: -webkit-flex !important;
   display: -ms-flexbox !important;
   display: flex !important;
 }
+
 .social-btn {
   background-position: center;
   background-size: contain;
@@ -483,6 +498,7 @@ body .demo-blog {
   color: rgba(0, 0, 0, 0.54);
   background: transparent;
 }
+
 .demo-blog .mdl-mini-footer {
   margin-top: 80px;
   height: 120px;
@@ -494,81 +510,95 @@ body .demo-blog {
   background-color: white;
   box-sizing: border-box;
 }
-.post-content .alignnone {
-  margin: 5px 20px 20px 0;
+.post-content {
+  .alignnone {
+    margin: 5px 20px 20px 0;
+  }
+  .aligncenter,
+  div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+  }
+  .alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+  }
+  .alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+  }
+
+  .aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+  }
+
+  a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+  }
+
+  a img.alignnone {
+    margin: 5px 20px 20px 0;
+  }
+
+  a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+  }
+
+  a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  img.alignright,
+  img.alignnone,
+  img.alignleft,
+  img.aligncenter {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 100%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+    clear: both;
+  }
+
+  .wp-caption.alignnone {
+    margin: 5px 20px 20px;
+  }
+
+  .wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+  }
+
+  .wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+  }
+
+  .wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+  }
+
+  .wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+  }
 }
-.post-content .aligncenter,
-.post-content div.aligncenter {
-  display: block;
-  margin: 5px auto 5px auto;
-}
-.post-content .alignright {
-  float: right;
-  margin: 5px 0 20px 20px;
-}
-.post-content .alignleft {
-  float: left;
-  margin: 5px 20px 20px 0;
-}
-.post-content .aligncenter {
-  display: block;
-  margin: 5px auto 5px auto;
-}
-.post-content a img.alignright {
-  float: right;
-  margin: 5px 0 20px 20px;
-}
-.post-content a img.alignnone {
-  margin: 5px 20px 20px 0;
-}
-.post-content a img.alignleft {
-  float: left;
-  margin: 5px 20px 20px 0;
-}
-.post-content a img.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.post-content img.alignright,
-.post-content img.alignnone,
-.post-content img.alignleft,
-.post-content img.aligncenter {
-  max-width: 100%;
-  height: auto;
-}
-.post-content .wp-caption {
-  background: #fff;
-  border: 1px solid #f0f0f0;
-  max-width: 100%;
-  /* Image does not overflow the content area */
-  padding: 5px 3px 10px;
-  text-align: center;
-  clear: both;
-}
-.post-content .wp-caption.alignnone {
-  margin: 5px 20px 20px;
-}
-.post-content .wp-caption.alignleft {
-  margin: 5px 20px 20px 0;
-}
-.post-content .wp-caption.alignright {
-  margin: 5px 0 20px 20px;
-}
-.post-content .wp-caption img {
-  border: 0 none;
-  height: auto;
-  margin: 0;
-  max-width: 98.5%;
-  padding: 0;
-  width: auto;
-}
-.post-content .wp-caption p.wp-caption-text {
-  font-size: 11px;
-  line-height: 17px;
-  margin: 0;
-  padding: 0 4px 5px;
-}
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -577,6 +607,7 @@ body .demo-blog {
   width: 1px;
   overflow: hidden;
 }
+
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
@@ -596,6 +627,5 @@ body .demo-blog {
   text-decoration: none;
   top: 5px;
   width: auto;
-  z-index: 100000;
-  /* Above WP toolbar. */
+  z-index: 100000; /* Above WP toolbar. */
 }

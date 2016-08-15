@@ -19,7 +19,7 @@
       <span class="visuallyhidden">share</span>
     </div>
   </div>
-  <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
+  <div class="mdl-color-text--grey-700 mdl-card__supporting-text post-content">
     <?php the_content() ?>
   </div>
   <div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">
