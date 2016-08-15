@@ -18,12 +18,9 @@
 <html <?php language_attributes(); ?>>
   <head>
 
-    <!-- -->
     <?php wp_head() ?>
-    <!-- -->
 
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-    <title>Material Design Lite</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
